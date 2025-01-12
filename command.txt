@@ -64,7 +64,7 @@ On branch master
 nothing to commit, working tree clean
 
 
-
+//push code to remote//
 
 
 $ git remote add origin https://github.com/vara-hub/NewRepo.git
