@@ -1,0 +1,98 @@
+91979@D_Sakthi MINGW64 ~
+$ git config --global user.name "vara-hub"
+
+
+91979@D_Sakthi MINGW64 ~
+$ git config --global user.email "varalaksmi.d@gmail.com"
+
+91979@D_Sakthi MINGW64 ~
+$ mkdir NewRepo
+
+91979@D_Sakthi MINGW64 ~
+$ cd NewRepo
+
+91979@D_Sakthi MINGW64 ~/NewRepo
+$ git init
+Initialized empty Git repository in C:/Users/91979/NewRepo/.git/
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ ls
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ ls -a
+./  ../  .git/
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ cd .git
+
+91979@D_Sakthi MINGW64 ~/NewRepo/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+91979@D_Sakthi MINGW64 ~/NewRepo/.git (GIT_DIR!)
+$ cdcd ..
+bash: cdcd: command not found
+
+91979@D_Sakthi MINGW64 ~/NewRepo/.git (GIT_DIR!)
+$ cd ..
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git add vara.txt
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   vara.txt
+
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git commit -m "this is my first commit"
+[master (root-commit) 45f4231] this is my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 vara.txt
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git log
+commit 45f4231eeb014509abc43b236ba2fb1e596586d0 (HEAD -> master)
+Author: vara-hub <varalaksmi.d@gmail.com>
+Date:   Sun Jan 12 14:21:34 2025 +0530
+
+    this is my first commit
+
+//-----before go to GitHub create repo with same ----// 
+copy paste below commands origin, branch, push----------
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git remote add origin https://github.com/vara-hub/NewRepo.git
+
+91979@D_Sakthi MINGW64 ~/NewRepo (master)
+$ git branch -M main
+
+91979@D_Sakthi MINGW64 ~/NewRepo (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 15.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vara-hub/NewRepo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
